@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 1em 1em 0 1em;
+    background-color: aliceblue;
+}
+/* typograpghy */
+h1 {
+    font-size: 2.2em;
+    margin-bottom: 2.5em;
+}
+h2 {
+    margin-bottom: 2em;
+}
+.login {
+    margin-bottom: 1.5em;
+    font-size: 1.125em;
+    font-weight: 700;
+}
+.info {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+/* layout */
+.grid {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2em auto;
+}
+.bg-img {
+    display: none;
+}
+.style {
+    margin: 0;
+}
+@media (min-width: 675px) {
+    body {
+        padding: 2em 1em 0 2em;
+    }
+    .grid {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto 1em auto;
+    }
+    .bg-img {
+        background-image: url('./images/cards.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: block;
+        text-align: center;
+    }
+    .bg-img p {
+        text-align: start;
+        font-size: 1.5em;
+        font-weight: 700;
+        color: aliceblue;
+        margin: 1em auto;
+        width: 60%;
+    }
+    .style {
+        padding-left: 3em;
+    }
+}
+/* form */
+form {
+    border-top: 1px solid gray;
+    padding-top: 1em;
+}
+input {
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding: .5em;
+    outline: none;
+}
+input:is([type="email"], [type="password"]){
+    margin-top: 0.5em;
+    margin-bottom: 0.7em;
+    padding: .5em;
+    width: 100%;
+    max-width: 300px;
+}
+input[type="checkbox"] {
+    display: inline;
+    width: 2%;
+    background-color: whitesmoke;
+    
+}
+.remember {
+    display: inline;
+}
+.reset {
+    margin-left: .6em;
+    white-space: nowrap;
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.884);  
+}
+.reset:hover, .span:focus {
+      color: rgb(29, 29, 155);
+      text-decoration: underline;
+}
+button {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    padding: .5em;
+    margin: .7em 0;
+    font-size: 1.02em;
+    background-color: rgba(0, 0, 255, 0.836);
+}
+button:hover, button:focus {
+    background-color: rgba(0, 0, 255, 0.521);
+    font-weight: 700;
+    cursor: default;
+}
+.span a {
+    text-decoration: none;
+    color: rgba(0, 0, 255, 0.884);  
+  }
+.span a:hover, .span a:focus {
+      color: rgb(29, 29, 155);
+      text-decoration: underline;
+}
+/* register html */
+.grid01 {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 2em auto;
+}
+.display {
+    display: none;
+}
+@media (min-width: 675px) {
+    .grid01 {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 auto 2em auto;
+    }
+    .display {
+        display: block;
+        background-image: linear-gradient(to top, gray, aqua);
+    }
+    .display h1 {
+        margin-bottom: 1.5em;
+        text-align: center;
+    }
+    .display p {
+        width: 90%;
+        text-align: center;
+        font-size: 1.5em;
+        font-weight: 500;
+        margin: 0 auto;
+    }
+    .pic {
+        display: block;
+        width: 80%;
+        max-width: 300px;
+        margin: 4em auto 0 auto;
+    }
+    .register {
+        padding-left: 3em;
+    }
+}
